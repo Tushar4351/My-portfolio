@@ -103,6 +103,21 @@ const Projects = () => {
   onClick={() => handlePanelClick(index)}
   onMouseEnter={() => setActiveTooltipIndex(index)}
   onMouseLeave={() => setActiveTooltipIndex(-1)}
+  onTouchStart={() => setActiveTooltipIndex(index)}
+  onTouchEnd={() => setActiveTooltipIndex(-1)}
+  onKeyDown={(event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      setActiveTooltipIndex(index);
+    }
+  }}
+  onKeyUp={(event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      setActiveTooltipIndex(-1);
+      handlePanelClick(index);
+    }
+  }}
+  tabIndex={0} // Make the panel focusable for keyboard navigation
+  role="button" // Define the panel as a button for accessibility
 >
   {index !== activePanel && index === activeTooltipIndex && (
     <div className="toolti bg-black1 flex justify-center items-center w-24 text-Blanc">Click me</div>
