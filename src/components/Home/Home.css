@@ -1,0 +1,233 @@
+.styling-text{
+  width: 0ch;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: text 7s steps(25) infinite alternate;
+  border-right: 3px solid white;
+}
+@keyframes text {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 13ch;
+  }
+}
+button {
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Helvetica,"sans-serif";
+  transition: all .2s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: #cfef00;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+
+
+
+
+button:hover {
+  background: #c4e201;
+}
+
+button > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform .3s ease-in-out;
+}
+
+button:hover svg {
+  transform: translateX(5px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.buttonDownload {
+  display: inline-block;
+  height: 54px;
+  position: relative;
+  padding: 10px 25px;
+  background-color: #DE3163;
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 0.9em;
+  text-align: center;
+  text-indent: 15px;
+  border: none;
+  border-radius: 2em;
+  font-weight: bold;
+}
+
+.buttonDownload:hover {
+  background-color: var(--Blanc);
+  color: black;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 52%;
+}
+
+.buttonDownload:before {
+  width: 12px;
+  height: 2px;
+  border-style: solid;
+  border-width: 0 2px 2px;
+}
+
+.buttonDownload:after {
+  width: 0;
+  height: 0;
+  margin-left: 3px;
+  margin-top: -7px;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: transparent;
+  border-top-color: inherit;
+  animation: downloadArrow 1s linear infinite;
+  animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+  border-color: black;
+}
+
+.buttonDownload:hover:after {
+  border-top-color: black;
+  animation-play-state: running;
+}
+
+
+@keyframes downloadArrow {
+  0% {
+    margin-top: -7px;
+    opacity: 1;
+  }
+
+  0.001% {
+    margin-top: -15px;
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-top: 0;
+    opacity: 0.4;
+  }
+}
+
+.scroll_down {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #343434;
+  font-weight: var( --font-medium);
+}
+.home_scroll-name a {
+  font-size: var(--small-font-size);
+}
+a {
+  text-decoration: none;
+}
+.mouse {
+  border: 0.125rem solid #343434;
+  display: block;
+  height: 1.6rem;
+  width: 1.25rem;
+  margin: auto;
+  margin-top: 0.75rem;
+  border-radius: 1rem;
+  position: relative;
+}
+@keyframes ani-mouse {
+  0% {
+    top: 29%;
+  }
+  15% {
+    top: 50%;
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    top: 29%;
+  }
+}
+.wheel {
+  background-color: #343434;
+  border-radius: 100%;
+  width: 0.25rem;
+  height: 0.25rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: ani-mouse 2s linear infinite;
+}
+.custom-shape-divider-bottom-1686883565 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1686883565 svg {
+  position: relative;
+  display: block;
+  width: calc(139% + 1.3px);
+  height: 177px;
+}
+
+.custom-shape-divider-bottom-1686883565 .shape-fill {
+  fill: white;
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-10%);
+  }
+
+}
+
+/* Apply the animation to the shape divider */
+.shape-fill {
+  animation: waveAnimation 40s linear infinite;
+ 
+}
+
+@media screen and (min-width: 1024px) {
+.name{
+  font-size: 3.3vw;
+}
+.work{
+  font-size: 3.9vw;
+}
+}
+
+@media screen and (max-width: 379px) {
+
+  .buttonDownload{
+    height: 65px;
+  }
+}

@@ -1,0 +1,103 @@
+
+  .Wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+  .Wrapper .progress {
+    position: relative;
+    border-radius: 50%;
+    color: #fff;
+    background: #444
+      linear-gradient(to right, transparent 50%, var(--principal) 0);
+  }
+  .Wrapper .progress h3 {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    z-index: 1;
+    font-weight: 500;
+  }
+  .Wrapper .progress h3 span {
+    font-size: 0.65em;
+    font-weight: 400;
+  }
+  .Wrapper .progress h4 {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:1;
+    font-weight: 500;
+    font-size: smaller;
+    color: var(--principal);
+    text-transform: uppercase;
+  }
+  .Wrapper .progress::before {
+    content: "";
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50%;
+  }
+  .Wrapper .progress::after{
+  content:'';
+  position:absolute;
+  inset:0.625rem;
+  border-radius: 50%;
+  background: #343434;
+  }
+  .Wrapper .progress::before{
+  background: var(--principal);
+  transform: rotate(calc(((var(--i) - 50) * 0.01turn)));
+  }
+  .Wrapper .progress.less::before{
+    background: #444;
+    transform: rotate(calc(((var(--i) - 0) * 0.01turn)));
+    }
+
+    @media (max-width: 419px) {
+        
+        .Wrapper .progress h3 {
+          font-size: 4vw;
+          font-weight: 600;
+        }
+        .Wrapper .progress h4 {
+          font-size: 2vw;
+          font-weight: 600;
+        }
+      }
+      
+      /* For screens from 420px to 767px */
+      @media (min-width: 420px) and (max-width: 767px) {
+       
+        .Wrapper .progress h3 {
+          font-size: 3vw;
+          font-weight: 600;
+        }
+        .Wrapper .progress h4 {
+          font-size: 1.1vw;
+          font-weight: 600;
+        }
+      }
+      
+      /* For screens from 768px to 1023px */
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .Wrapper .progress h3 {
+            font-size: 3vw;
+            font-weight: 600;
+          }
+          .Wrapper .progress h4 {
+            font-size: 1.1vw;
+            font-weight: 600;
+          }
+      }
+      
+      /* For screens larger than 1024px */
+     

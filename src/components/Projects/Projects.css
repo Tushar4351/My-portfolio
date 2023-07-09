@@ -1,0 +1,94 @@
+
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 65vh;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+  display: flex;
+  flex-direction: column;
+}
+
+.details {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  visibility: hidden;
+}
+
+.panel h3 {
+  font-size: 24px;
+  opacity: 0;
+}
+
+.panel p {
+  font-size: 16px;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.panel.active p {
+  opacity: 1;
+  transition: opacity 0.9s ease-in 0.4s;
+}
+
+.panel.active .details {
+  visibility: visible;
+}
+.panel {
+  position: relative;
+}
+
+.toolti {
+  position: absolute;
+  top: -50px; /* Adjust this value as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1; /* Ensure the tooltip appears above other elements */
+}
+.panel:hover .toolti {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -10px); /* Adjust the vertical position */
+}
+
+
+
+
+@media (max-width: 640px) {
+  .contain {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .panel h3 {
+    font-size: 16px;
+  }
+
+  .panel p {
+    font-size: 12px;
+  }
+}
+
