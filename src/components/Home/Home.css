@@ -232,7 +232,7 @@ a {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
 
   .custom-shape-divider-bottom-1686883565{
     display: none;
