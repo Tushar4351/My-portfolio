@@ -231,3 +231,19 @@ a {
     height: 65px;
   }
 }
+
+@media screen and (max-width: 400px) {
+
+  .custom-shape-divider-bottom-1686883565{
+    display: none;
+  }
+  .home_scroll-name{
+    color: var(--Blanc);
+  }
+  .mouse{
+    border: 0.125rem solid var(--Blanc);
+  }
+    .wheel{
+      background-color: var(--Blanc);
+    }    
+}
