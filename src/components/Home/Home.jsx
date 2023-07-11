@@ -20,7 +20,7 @@ const Home = () => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={transition1}
-        className="flex flex-col justify-center items-center h-full relative gap-10 md:flex-row p-7 md:gap-0"
+        className="flex flex-col justify-center items-center h-full relative gap-10 md:flex-row p-7 md:gap-10"
       >
         <motion.div
           initial={{ opacity: 0, y: "-50%" }}
