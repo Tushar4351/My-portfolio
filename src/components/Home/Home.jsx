@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <div
-      className="h-screen bg-gradient-to-b from-black via-black to-gray-800 overflow-hidden"
+      className="h-screen bg-gradient-to-b from-black via-black to-gray-800"
       id="home"
     >
       <motion.div
