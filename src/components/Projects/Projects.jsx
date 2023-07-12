@@ -62,14 +62,14 @@ const Projects = () => {
         "It is just a frontend  web app where u can get almost similar features like snake game.Here I used HTML,CSS and JavaScript.",
       link: "http://snake-game-seven-sigma.vercel.app",
     },
-    {
-      image:
-        "https://images.unsplash.com/photo-1624385392440-3b3a5423fae5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=925&q=80",
-      title: "Secrets Web App",
-      description:
-        "It is a Full stack web app where u can see login, register page ,and u can store ur Secrets.For authentication i used JWT tokens.Here i used for frontend- Html,Bootstrap,ejs and for backend- Node Js,Express Js,MongoDb, Mongoose.",
-      link: "https://tindogtush.netlify.app",
-    },
+    // {
+    //   image:
+    //     "https://images.unsplash.com/photo-1624385392440-3b3a5423fae5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=925&q=80",
+    //   title: "Secrets Web App",
+    //   description:
+    //     "It is a Full stack web app where u can see login, register page ,and u can store ur Secrets.For authentication i used JWT tokens.Here i used for frontend- Html,Bootstrap,ejs and for backend- Node Js,Express Js,MongoDb, Mongoose.",
+    //   link: "https://tindogtush.netlify.app",
+    // },
     {
       image: ChatApp,
       title: "Chat Web App",
