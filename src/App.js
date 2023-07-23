@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <PreLoader/>
-    <div className="App no-scrollbar overflow-y-auto">
+    <div className="App no-scrollbar overflow-x-hidden">
       <Sidebar />
       <Home />
       <About />
