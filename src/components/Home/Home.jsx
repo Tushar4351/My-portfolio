@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { transition1 } from "../../transitions";
 import ScrollDown from "./ScrollDown";
-import resume from "./resume.pdf";
+import resume from "./Resume.pdf";
 
 const Home = () => {
 
